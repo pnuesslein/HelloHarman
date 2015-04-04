@@ -30,7 +30,7 @@
     self.moods = @[
                    @{
                        @"name" : @"Excited",
-                       @"iconName" : @"Exited"
+                       @"iconName" : @"Excited"
                     },
                    @{
                        @"name" : @"Meh",
@@ -64,8 +64,8 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"MoodTableViewCell"
                                            forIndexPath:indexPath];
 
-    cell.imageviewMood.image = [UIImage imageNamed:self.moods[indexPath.row][@"imageName"]];
-    cell.labelMood.text = self.moods[indexPath.row][@"imageName"];
+    cell.imageviewMood.image = [UIImage imageNamed:self.moods[indexPath.row][@"iconName"]];
+    cell.labelMood.text = self.moods[indexPath.row][@"name"];
 
     return cell;
 }
