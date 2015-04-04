@@ -17,12 +17,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    songListArray = @[@"Return of the Mack", @"Track 2", @"Track 3"];
+    fileListArray = @[@"Return Of The Mack.mp3",@"Return Of The Mack.mp3",@"Return Of The Mack.mp3"];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(IBAction)playMusic:(id)sender{
+    [musicPlayer play];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,9 +42,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger returnVal = 3;
+    //NSInteger returnVal = 3;
 
-    return returnVal;
+    return songListArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,6 +54,7 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"MoodSongTableViewCell"
                                            forIndexPath:indexPath];
 
+    cell.textLabel.text = [songListArray objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -173,9 +181,12 @@
 //{
 //}
 
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    newURL = [[NSURL alloc] initFileURLWithPath: [fileListArray objectAtIndex:indexPath.row]];
+    musicPlayer = [[AVAudioPlayer alloc]initWithContentsOfURL:newURL error:NULL];
+}
 
 //- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 //{

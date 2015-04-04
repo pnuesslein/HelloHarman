@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AVFoundation.h>
 @interface MoodSongTableViewController : UITableViewController
+{
+    
+    NSArray *songListArray;
+    NSArray *fileListArray;
+    NSURL *newURL;
+    AVAudioPlayer *musicPlayer;
+    
+}
+
+-(IBAction)playMusic:(id)sender;
 
 @end

@@ -22,7 +22,7 @@
 
     self.harmankardonHandler = [HKWControlHandler sharedInstance];
 
-    NSInteger success = [self.harmankardonHandler initializeHKWirelessController:@"2FA8-2FD6-C27D-47E8-A256-D011-3751-2BD6"];
+    //NSInteger success = [self.harmankardonHandler initializeHKWirelessController:@"2FA8-2FD6-C27D-47E8-A256-D011-3751-2BD6"];
     
     return YES;
 }

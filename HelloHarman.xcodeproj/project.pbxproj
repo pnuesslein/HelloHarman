@@ -14,10 +14,12 @@
 		520043211ACF52DE006F1C74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520043201ACF52DE006F1C74 /* Images.xcassets */; };
 		520043241ACF52DE006F1C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520043221ACF52DE006F1C74 /* LaunchScreen.xib */; };
 		520043301ACF52DE006F1C74 /* HelloHarmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5200432F1ACF52DE006F1C74 /* HelloHarmanTests.m */; };
-		5200433A1ACF53E9006F1C74 /* libHKWirelessHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 520043391ACF53E9006F1C74 /* libHKWirelessHD.a */; };
 		5200433D1ACF641F006F1C74 /* MoodSongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5200433C1ACF641F006F1C74 /* MoodSongTableViewController.m */; };
 		520043401ACF650A006F1C74 /* MoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5200433F1ACF650A006F1C74 /* MoodTableViewCell.m */; };
 		520043431ACF66D6006F1C74 /* MoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 520043421ACF66D6006F1C74 /* MoodTableViewController.m */; };
+		97602DD91ACF6FA2002A018F /* libHKWirelessHD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97602DD81ACF6FA2002A018F /* libHKWirelessHD.a */; };
+		97602DDF1ACF71AA002A018F /* Return Of The Mack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97602DDE1ACF71AA002A018F /* Return Of The Mack.mp3 */; };
+		97602DE31ACF77A3002A018F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97602DE21ACF77A3002A018F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +46,18 @@
 		520043291ACF52DE006F1C74 /* HelloHarmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloHarmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5200432E1ACF52DE006F1C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5200432F1ACF52DE006F1C74 /* HelloHarmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloHarmanTests.m; sourceTree = "<group>"; };
-		520043391ACF53E9006F1C74 /* libHKWirelessHD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHKWirelessHD.a; path = ../../Downloads/HKWirelessHDSDK/lib/libHKWirelessHD.a; sourceTree = "<group>"; };
 		5200433B1ACF641F006F1C74 /* MoodSongTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodSongTableViewController.h; sourceTree = "<group>"; };
 		5200433C1ACF641F006F1C74 /* MoodSongTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodSongTableViewController.m; sourceTree = "<group>"; };
 		5200433E1ACF650A006F1C74 /* MoodTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTableViewCell.h; sourceTree = "<group>"; };
 		5200433F1ACF650A006F1C74 /* MoodTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTableViewCell.m; sourceTree = "<group>"; };
 		520043411ACF66D6006F1C74 /* MoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTableViewController.h; sourceTree = "<group>"; };
 		520043421ACF66D6006F1C74 /* MoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTableViewController.m; sourceTree = "<group>"; };
+		97602DD81ACF6FA2002A018F /* libHKWirelessHD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHKWirelessHD.a; sourceTree = "<group>"; };
+		97602DDB1ACF6FB1002A018F /* DeviceGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceGroup.h; sourceTree = "<group>"; };
+		97602DDC1ACF6FB1002A018F /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		97602DDD1ACF6FB1002A018F /* HKWControlHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKWControlHandler.h; sourceTree = "<group>"; };
+		97602DDE1ACF71AA002A018F /* Return Of The Mack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Return Of The Mack.mp3"; sourceTree = "<group>"; };
+		97602DE21ACF77A3002A018F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5200433A1ACF53E9006F1C74 /* libHKWirelessHD.a in Frameworks */,
+				97602DE31ACF77A3002A018F /* AVFoundation.framework in Frameworks */,
+				97602DD91ACF6FA2002A018F /* libHKWirelessHD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +83,10 @@
 		520043071ACF52DE006F1C74 = {
 			isa = PBXGroup;
 			children = (
-				520043391ACF53E9006F1C74 /* libHKWirelessHD.a */,
+				97602DE21ACF77A3002A018F /* AVFoundation.framework */,
+				97602DDE1ACF71AA002A018F /* Return Of The Mack.mp3 */,
+				97602DD81ACF6FA2002A018F /* libHKWirelessHD.a */,
+				97602DDA1ACF6FB1002A018F /* include */,
 				520043121ACF52DE006F1C74 /* HelloHarman */,
 				5200432C1ACF52DE006F1C74 /* HelloHarmanTests */,
 				520043111ACF52DE006F1C74 /* Products */,
@@ -136,6 +147,16 @@
 				5200432E1ACF52DE006F1C74 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97602DDA1ACF6FB1002A018F /* include */ = {
+			isa = PBXGroup;
+			children = (
+				97602DDB1ACF6FB1002A018F /* DeviceGroup.h */,
+				97602DDC1ACF6FB1002A018F /* DeviceInfo.h */,
+				97602DDD1ACF6FB1002A018F /* HKWControlHandler.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +241,7 @@
 			files = (
 				5200431F1ACF52DE006F1C74 /* Main.storyboard in Resources */,
 				520043241ACF52DE006F1C74 /* LaunchScreen.xib in Resources */,
+				97602DDF1ACF71AA002A018F /* Return Of The Mack.mp3 in Resources */,
 				520043211ACF52DE006F1C74 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +398,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulie/Downloads/HKWirelessHDSDK/lib,
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +420,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/paulie/Downloads/HKWirelessHDSDK/lib,
+					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +480,7 @@
 				520043351ACF52DE006F1C74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		520043361ACF52DE006F1C74 /* Build configuration list for PBXNativeTarget "HelloHarmanTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				520043381ACF52DE006F1C74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
