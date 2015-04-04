@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HKWControlHandler.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (strong, nonatomic) HKWControlHandler *harmankardonHandler;
 @property (strong, nonatomic) UIWindow *window;
-
 
 @end
 
