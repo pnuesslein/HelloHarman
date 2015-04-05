@@ -8,7 +8,7 @@
 
 #import "MoodSongTableViewController.h"
 
-@interface MoodSongTableViewController ()
+@interface MoodSongTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
